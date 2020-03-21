@@ -89,22 +89,22 @@ read -p "How many times you want to flip the coin = " noTimeFlip3
 for ((flipcount=1; flipcount<=noTimeFlip3; flipcount++))
 do
    case $((RANDOM%8)) in
-         0)
-			  Coin3[TTT]=$((${Coin3[TTT]}+1)) ;;
-         1)
-			  Coin3[HTT]=$((${Coin3[HTT]}+1)) ;;
-			2)
-			  Coin3[THH]=$((${Coin3[THH]}+1)) ;;
-			3)
-			  Coin3[THT]=$((${Coin3[THT]}+1)) ;;
-			4)
-			  Coin3[HTH]=$((${Coin3[HTH]}+1)) ;;
-			5)
-			  Coin3[TTH]=$((${Coin3[TTH]}+1)) ;;
-			6)
-			  Coin3[HHT]=$((${Coin3[HHT]}+1)) ;;
-			7)
-			  Coin3[HHH]=$((${Coin3[HHH]}+1)) ;;
+        0)
+	 Coin3[TTT]=$((${Coin3[TTT]}+1)) ;;
+        1)
+	 Coin3[HTT]=$((${Coin3[HTT]}+1)) ;;
+	2)
+	 Coin3[THH]=$((${Coin3[THH]}+1)) ;;
+	3)
+	 Coin3[THT]=$((${Coin3[THT]}+1)) ;;
+	4)
+	 Coin3[HTH]=$((${Coin3[HTH]}+1)) ;;
+	5)
+	 Coin3[TTH]=$((${Coin3[TTH]}+1)) ;;
+	6)
+	 Coin3[HHT]=$((${Coin3[HHT]}+1)) ;;
+	7)
+	 Coin3[HHH]=$((${Coin3[HHH]}+1)) ;;
    esac
 done
 
@@ -188,19 +188,19 @@ do
 	echo "3.Flip coin for triplet combination"
 	read -p "Choose the option : " Choice
 	case $Choice in
-			1)
-				Singlet
-				Sort1
-				break ;;
-			2)
-				Doublet
-				Sort2
-				break ;;
-			3)
-				Triplet
-				Sort3
-				break ;;
-			*)
-				echo "Invalid choice" ;;
+		1)
+		 Singlet
+		 Sort1
+		 break ;;
+		2)
+		 Doublet
+		 Sort2
+		 break ;;
+		3)
+		 Triplet
+		 Sort3
+		 break ;;
+		*)
+		 echo "Invalid choice" ;;
 	esac
 done
